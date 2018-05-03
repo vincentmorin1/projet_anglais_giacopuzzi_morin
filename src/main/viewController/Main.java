@@ -1,4 +1,4 @@
-package viewController;
+package main.viewController;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

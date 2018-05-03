@@ -1,4 +1,4 @@
-package viewController;
+package main.viewController;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
-public class HomeController{
+public class PlayController{
   @FXML
   private Button play = new Button();
   

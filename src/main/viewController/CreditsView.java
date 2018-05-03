@@ -1,4 +1,4 @@
-package viewController;
+package main.viewController;
 
 import java.io.IOException;
 
@@ -9,20 +9,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class HomeView {
-	
-	
-	public HomeView (Stage stage) throws IOException {
+public class CreditsView {
+
+
+	public CreditsView (Stage stage) throws IOException {
 		stage = new Stage();
-		
+
 		stage.setTitle("Who wants his TOEIC ?");
-		
-		FXMLLoader loader = new FXMLLoader();
-	    loader.setLocation(getClass().getResource("/fxml/home.fxml"));
-		Parent root = loader.load();
-		
+		Parent root = FXMLLoader.load(getClass().getResource("credits.fxml"));
+
 		stage.setOnCloseRequest(event -> {
-		 Platform.exit();
+			Platform.exit();
 		});
 		stage.setScene(new Scene(root, 1000, 700));
 		stage.setResizable(false);
